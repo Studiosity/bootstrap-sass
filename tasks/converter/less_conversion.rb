@@ -219,7 +219,7 @@ SASS
     # convert grid mixins LESS when => Sass @if
     def convert_grid_mixins(file)
       file = replace_rules file, /@mixin make-grid-columns/, comments: false do |css, pos|
-        mixin_all_grid_columns css, selector: '.col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}', to: '$grid-columns'
+        mixin_all_grid_columns css, selector: '.col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}, .col-xl-#{$i}', to: '$grid-columns'
       end
       file = replace_rules file, /@mixin float-grid-columns/, comments: false do |css, pos|
         mixin_all_grid_columns css, selector: '.col-#{$class}-#{$i}', to: '$grid-columns'
