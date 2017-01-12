@@ -323,11 +323,19 @@ $screen-xl-min:              $screen-xl !default;
 //** Deprecated `$screen-xl-desktop` as of v3.0.1
 $screen-xl-desktop:          $screen-xl-min !default;
 
+// Extra extra large screen / wide desktop
+//** Deprecated `$screen-xxl` as of v3.0.1
+$screen-xxl:                  2000px !default;
+$screen-xxl-min:              $screen-xxl !default;
+//** Deprecated `$screen-xxl-desktop` as of v3.0.1
+$screen-xxl-desktop:          $screen-xxl-min !default;
+
 // So media queries don't overlap when required, provide a maximum
 $screen-xs-max:              ($screen-sm-min - 1) !default;
 $screen-sm-max:              ($screen-md-min - 1) !default;
 $screen-md-max:              ($screen-lg-min - 1) !default;
 $screen-lg-max:              ($screen-xl-min - 1) !default;
+$screen-xl-max:              ($screen-xxl-min - 1) !default;
 
 
 //== Grid system
@@ -368,6 +376,11 @@ $container-lg:                 $container-large-desktop !default;
 $container-jumbo-desktop:      (1540px + $grid-gutter-width) !default;
 //** For `$screen-xl-min` and up.
 $container-xl:                 $container-jumbo-desktop !default;
+
+// Extra extra large screen / wide desktop
+$container-mega-desktop:      (1940px + $grid-gutter-width) !default;
+//** For `$screen-xxl-min` and up.
+$container-xxl:                 $container-mega-desktop !default;
 
 
 //== Navbar
